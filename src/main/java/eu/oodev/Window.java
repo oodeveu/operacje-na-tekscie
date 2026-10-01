@@ -34,9 +34,13 @@ public class Window {
 
             Scene scene = new Scene(webView, w, h);
 
-            stage.setTitle("Program Java - Klasa Window");
+            stage.setTitle("ONT");
+            stage.getIcons().add(new javafx.scene.image.Image(
+                    getClass().getResourceAsStream("/icon.png")
+            ));
             stage.setScene(scene);
             stage.show();
+            stage.setResizable(false);
         });
     }
 }
